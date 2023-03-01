@@ -1,0 +1,56 @@
+body{
+    display:flex;
+    background-color:wheat;
+    padding:10px;
+    flex-direction:column;
+    gap:10px;
+}
+
+h1{
+    margin:2px 0px 2px 0px;
+}
+
+main{
+    display:flex;
+    gap:10px;
+
+}
+
+section{
+    flex: 1;
+}
+
+section:nth-child(2){
+    background-image:url(../images/jag2.jpg);
+    background-size:cover;
+}
+
+section>ul{
+    list-style-type:square;
+}
+
+#MiddleSection{
+    flex: 2;
+}
+
+img{
+    max-width: 100%;
+}
+
+.card{
+    padding:8px;
+    border-radius:10px;
+    background-color:burlywood;
+    box-shadow:5px 5px 5px darkslategray;
+}
+
+li:hover{
+    opacity:0.75;
+    color:gray;
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        flex-direction:column;
+    }
+}
